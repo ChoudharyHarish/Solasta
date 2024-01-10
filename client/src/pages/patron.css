@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Lato:wght@300;900&family=Manrope:wght@300;400;700&display=swap');
+
+
+.team-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+}
+
+
+.member-card {
+    min-width: 16rem;
+    max-width: 16rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+
+.member-photo {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.member-name {
+    font-family: Days One;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.member-card a img {
+    width: 1.5rem;
+    transition: all 0.4s;
+}
+
+.member-card a:hover img {
+    scale: 1.1;
+    transition: all 0.4s;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.designation2 {
+    font-family: Days One;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.first,
+.second {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    row-gap: 2rem;
+}
+
+.member-card:hover {
+    scale: 1.02;
+    transition: all 0.4s;
+}
+
+@media (max-width:460px) {
+    .team-section {
+
+        padding-left: 0;
+        padding: 1rem;
+    }
+
+    .first,
+    .second {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
